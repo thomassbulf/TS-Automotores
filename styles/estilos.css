@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*reset de css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.inicio {
+    height: 15vh;
+    width: auto;
+    grid-column: 1;
+}
+
+header {
+    height: 10%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 5, 23);
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+main {
+    height: 80%;
+}
+
+header a {
+    color: silver;
+}
+
+ul {
+    list-style: none;
+    /*display: flex;
+    justify-content: space-around;*/
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+img {
+    height: 30vh;
+    width: auto;
+}
+
+ul img {
+    height: 5vh;
+    width: auto;
+}
+
+footer {
+    height: 10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 75%;
+}
+
+.main-img {
+    height: 50vh;
+    width: auto;
+}
+
+.clase-ul {
+    grid-column: 2;
+    justify-content: end;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 10px;
+    display: flex;
+    /*position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;*/
+}
+
+.clase-icons {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.clase-whatsapp {
+    display: flex;
+    justify-items: end;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.logo-wpp {
+    width: 10vh;
+    height: auto;
+}
+
+li{
+    margin: 0 10px;
+}
+
+.main-class {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-venta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.venta {
+    width: 100%;
+    height: auto;
+}
+
+.catalogo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-contacto {
+    height: 50vh;
+    width: auto;
+}
+
+/*tablet*/
+@media (min-width: 431px) and (max-width: 800px){
+    .container-venta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    height: 35vh;
+    width: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.catalogo-img {
+    height: 25vh;
+    width: auto;
+}
+
+.img-contacto {
+    height: 30vh;
+    width: auto;
+}
+
+h3 {
+    margin-left: 60%;
+}
+}
+
+
+
+/*celular*/
+@media (min-width: 320px) and (max-width: 430px){
+    .container-venta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.inicio{
+    width: 100%;
+}
+
+.clase-ul {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.main-img {
+    height: 35vh;
+    width: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.catalogo-img {
+    height: 25vh;
+    width: auto;
+}
+
+.img-contacto {
+    height: 30vh;
+    width: auto;
+}
+
+h3 {
+    margin-left: 60%;
+}
+}
+
