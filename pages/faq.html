@@ -5,31 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | TS Automotores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/estilos.css">
     <link rel="shortcut icon" href="../assets/logo/TS Logo 2.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <a href="../index.html"><img class="inicio" src="../assets/logo/TS Logo 2.png" alt="logo ts"></a>
-        <nav>
-            <ul class="clase-ul">
-                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="inicio" src="../assets/logo/TS Logo 2.png" alt="Logo TS">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="main-class">
         <h1>preguntas frecuentes</h1>
-        <section>
-        <p>- ¿Puedo dejar mi vehículo como parte de pago? La respuesta es si, tomamos tu usado en parte de pago y aún así te financiamos el resto <br>
-        - ¿La entrega es inmediata? Si, todos nuestros vehículos son con entrega inmediata siempre y cuando cumpla los requisitos como no figurar en el veraz y dejar un anticipo del 40% del valor de la unidad <br>
-        - ¿Debo ir al regístro automotor a realizar la transferencia? No, nuestros gestores se encargan de todos los trámites administrativos <br>
-        -¿El valor de transferencia se encuentra en el precio publicado? Si, todos los precios de vehículos que publicamos incluyen transferencia y gastos administrativos</p>
-        </section>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        ¿Puedo dejar mi vehículo como parte de pago?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>La respuesta es si, tomamos tu usado en parte de pago y aún así te financiamos el resto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿La entrega es inmediata?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Si, todos nuestros vehículos son con entrega inmediata siempre y cuando cumpla los requisitos como no figurar en el veraz y dejar un anticipo del 40% del valor de la unidad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Debo ir al regístro automotor a realizar la transferencia?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>No, nuestros gestores se encargan de todos los trámites administrativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿El valor de transferencia se encuentra en el precio publicado?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Si, todos los precios de vehículos que publicamos incluyen transferencia y gastos administrativos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section>
             <h2>Tu vehículo está cerca!!!</h2>
@@ -55,5 +125,6 @@
             <h3>Página desarrollada por Thomas Sbulf</h3>
         </section>  
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
