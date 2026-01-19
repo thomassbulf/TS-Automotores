@@ -20,7 +20,7 @@ header {
 
     .navbar.navbar-expand-lg {
         @include v.flex(default, default, space-between, center);
-        width: 100%;  
+        width: 100%;
     }
 
     .navbar-nav .nav-link {
@@ -95,7 +95,7 @@ header {
         }
 
         .navbar.navbar-expand-lg {
-            @include v.flex(default, wrap,space-between, default);
+            @include v.flex(default, wrap, space-between, default);
         }
 
         .collapse.navbar-collapse {
@@ -116,10 +116,11 @@ header {
     }
 
     @keyframes scale {
-        0%{
+        0% {
             scale: 1;
         }
-        100%{
+
+        100% {
             scale: 1.1;
             color: v.$gold;
         }
