@@ -1,0 +1,131 @@
+@use "variables" as v;
+
+.inicio {
+    height: 15vh;
+    width: auto;
+}
+
+header {
+    height: 10%;
+    position: sticky;
+    top: 0;
+    background-color: v.$azulNoche;
+    font-size: 20px;
+
+
+    .inicio {
+        height: 15vh;
+        width: auto;
+    }
+
+    .navbar.navbar-expand-lg {
+        @include v.flex(default, default, space-between, center);
+        width: 100%;  
+    }
+
+    .navbar-nav .nav-link {
+        color: v.$silver;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: v.$gold;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+
+    //unicamente version de escritorio
+    @media (min-width: 801px) {
+        .collapse.navbar-collapse {
+            @include v.flex(default, default, flex-end, default);
+        }
+    }
+
+    //tablet
+    @include v.tablet {
+        .navbar.navbar-expand-lg {
+            @include v.flex(row, default, center, default);
+        }
+
+        .collapse.navbar-collapse {
+            flex-basis: 100%;
+            display: none;
+            text-align: center;
+        }
+
+        .navbar-collapse.show {
+            @include v.flex(row, nowrap, center, center);
+            text-align: center;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+
+        .collapsing {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            @include v.flex(default, nowrap, center, default);
+        }
+
+    }
+
+    //celular
+    @include v.mobile {
+        .inicio {
+            width: 100%;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .navbar.navbar-expand-lg {
+            @include v.flex(default, wrap,space-between, default);
+        }
+
+        .collapse.navbar-collapse {
+            flex-basis: 100%;
+            display: none;
+            text-align: center;
+        }
+
+        .navbar-collapse.show {
+            @include v.flex(column, nowrap, center, center);
+            text-align: center;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+    }
+
+    @keyframes scale {
+        0%{
+            scale: 1;
+        }
+        100%{
+            scale: 1.1;
+            color: v.$gold;
+        }
+    }
+
+    .nav-link:hover {
+        animation: scale 0.1s forwards;
+    }
+}

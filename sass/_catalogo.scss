@@ -1,0 +1,44 @@
+@use "variables" as v;
+
+.container-venta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.venta {
+    width: 100%;
+    height: auto;
+}
+
+.catalogo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//tablet
+@include v.tablet {
+    .container-venta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalogo-img {
+        height: 25vh;
+        width: auto;
+    }
+}
+
+//celular
+@include v.mobile {
+    .container-venta {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}

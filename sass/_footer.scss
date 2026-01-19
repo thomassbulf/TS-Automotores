@@ -1,0 +1,74 @@
+@use "variables" as v;
+
+footer {
+    height: 10%;
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        margin-left: 75%;
+    }
+
+    .clase-icons {
+        @include v.flex(row, nowrap, flex-start, normal);
+        /*display: flex;
+        justify-content: flex-start;*/
+    }
+
+    .clase-whatsapp {
+        @include v.flex(row, nowrap, end, normal);
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        /*display: flex;
+        justify-items: end;*/
+    }
+
+    .logo-wpp {
+        width: 10vh;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul img {
+        height: 5vh;
+        width: auto;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    //tablet
+    @include v.tablet {
+        h3 {
+            margin-left: 60%;
+        }
+    }
+
+    //celular
+    @include v.mobile {
+        h3 {
+            margin-left: 60%;
+        }
+    }
+
+    @keyframes scale2 {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.5;
+        }
+    }
+
+    img:hover {
+        animation: scale2 0.5s forwards;
+    }
+}
