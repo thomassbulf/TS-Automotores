@@ -2,11 +2,12 @@
 
 
 main {
-    height: 80%;
+    //height: 80%;
 
     p {
         font-size: 20px;
         text-align: center;
+        margin: 10px 20px;
     }
 
     ul {
@@ -24,17 +25,13 @@ main {
     }
 
     .main-img {
-        height: 50vh;
+        height: 60vh;
         width: auto;
     }
 
     .main-class {
         @include v.flex(column, wrap, center, center);
         gap: 50px;
-        /*display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;*/
     }
 
     h2 {
@@ -52,7 +49,7 @@ main {
     //tablet
     @include v.tablet {
         .main-img {
-            height: 35vh;
+            height: 50vh;
             width: auto;
         }
 
@@ -78,6 +75,7 @@ main {
 
         p {
             text-align: center;
+            margin: 5px 10px;
         }
     }
 

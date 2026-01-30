@@ -1,9 +1,5 @@
 @use "variables" as v;
 
-.inicio {
-    height: 15vh;
-    width: auto;
-}
 
 header {
     height: 10%;
@@ -121,12 +117,12 @@ header {
         }
 
         100% {
-            scale: 1.1;
-            color: v.$gold;
+            scale: 1.1;         
         }
     }
 
     .nav-link:hover {
         animation: scale 0.1s forwards;
+        color: v.$gold;
     }
 }

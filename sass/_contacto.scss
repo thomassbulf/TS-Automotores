@@ -6,29 +6,65 @@ form {
 
 .main-class {
     @include v.flex(column, wrap, center, center);
-    /*display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;*/
+
+    .contacto-contenido {
+        @include v.flex(row, nowrap, space-between, flex-start);
+        gap: 40px;
+    }
 
     .img-contacto {
         @include v.flex(row, nowrap, center, center);
         height: 50vh;
         width: auto;
-        /*display: flex;
-        justify-content: center;
-        align-items: center;*/
+        margin: 0 10px;
+    }
+
+    h2 {
+        margin: 10px 0 0 0;
+    }
+
+    .btn {
+        border-radius: 20px;
+        border-color: v.$azulNoche;
+        color: v.$azulNoche;
+        padding: 3px 10px;
+        margin: 0 3px;
+    }
+
+    .btn:hover {
+        border-color: v.$gold;
+        color: v.$gold;
+
+        @keyframes scale {
+            0% {
+                scale: 1;
+            }
+
+            100% {
+                scale: 1.1;
+            }
+
+        }
+
+        animation: scale 0.1s forwards;
     }
 
     @include v.tablet {
+        .contacto-contenido {
+            @include v.flex(column-reverse, nowrap, center, center);
+        }
+
         .img-contacto {
-            height: 30vh;
+            height: 40vh;
             width: auto;
         }
     }
 
     @include v.mobile {
+        .contacto-contenido {
+            @include v.flex(column-reverse, nowrap, center, center);
+        }
+
         .img-contacto {
             height: 30vh;
             width: auto;
