@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+.sobre-nosotros {
+    @include v.flex(row, nowrap, space-between, center);
+
+    img {
+        height: 60vh;
+        width: auto;
+        margin: 20px;
+    }
+
+    // tablet
+    @include v.tablet {
+        @include v.flex(column, nowrap, center, center);
+        text-align: center;
+
+        img {
+            height: 50vh;
+            width: auto;
+        }
+    }
+
+    // mobile
+    @include v.mobile {
+        @include v.flex(column, nowrap, center, center);
+        text-align: center;
+
+        img {
+            height: 35vh;
+            width: auto;
+        }
+    }
+}

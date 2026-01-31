@@ -322,6 +322,47 @@ main h1 {
     align-items: center;
   }
 }
+.sobre-nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sobre-nosotros img {
+  height: 60vh;
+  width: auto;
+  margin: 20px;
+}
+@media (min-width: 431px) and (max-width: 800px) {
+  .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sobre-nosotros img {
+    height: 50vh;
+    width: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sobre-nosotros img {
+    height: 35vh;
+    width: auto;
+  }
+}
+
 form {
   text-align: center;
 }
