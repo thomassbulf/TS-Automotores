@@ -7,6 +7,11 @@ form {
 .main-class {
     @include v.flex(column, wrap, center, center);
 
+    p {
+        margin: 0 15px 20px 15px;
+        text-align: center
+    }
+
     .contacto-contenido {
         @include v.flex(row, nowrap, space-between, flex-start);
         gap: 40px;
@@ -19,8 +24,12 @@ form {
         margin: 0 10px;
     }
 
+    h1 {
+        margin: 10px 0;
+    }
+
     h2 {
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .btn {

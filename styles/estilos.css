@@ -374,6 +374,10 @@ form {
   justify-content: center;
   align-items: center;
 }
+.main-class p {
+  margin: 0 15px 20px 15px;
+  text-align: center;
+}
 .main-class .contacto-contenido {
   display: flex;
   flex-direction: row;
@@ -392,8 +396,11 @@ form {
   width: auto;
   margin: 0 10px;
 }
+.main-class h1 {
+  margin: 10px 0;
+}
 .main-class h2 {
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .main-class .btn {
   border-radius: 20px;
