@@ -17,19 +17,19 @@ $green: #008000;
 
 //responsive
 @mixin tablet {
-    @media (min-width: 431px) and (max-width: 800px){
+    @media (min-width: 431px) and (max-width: 800px) {
         @content;
     }
 }
 
 @mixin mobile {
-    @media (min-width: 320px) and (max-width: 430px){
+    @media (min-width: 320px) and (max-width: 430px) {
         @content;
     }
 }
 
 //flex
-@mixin flex($fd, $fw, $jc, $ai){
+@mixin flex($fd, $fw, $jc, $ai) {
     display: flex;
     flex-direction: $fd;
     flex-wrap: $fw;

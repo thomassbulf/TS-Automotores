@@ -2,8 +2,8 @@
 
 footer {
     height: 10%;
-    
-    
+
+
     @include v.flex(flex-start, nowrap, space-between, center);
     padding: 20px;
 
@@ -47,11 +47,12 @@ footer {
     //tablet
     @include v.tablet {
         .logo-wpp {
-        width: 7vw;
-        height: auto;
+            width: 7vw;
+            height: auto;
         }
+
         li {
-        margin: 0 5px;
+            margin: 0 5px;
         }
     }
 
@@ -61,8 +62,8 @@ footer {
         @include v.flex(column, nowrap, center, center);
 
         .logo-wpp {
-        width: 12vw;
-        height: auto;
+            width: 12vw;
+            height: auto;
         }
 
         .clase-whatsapp {
@@ -74,7 +75,7 @@ footer {
             text-align: center;
             margin: 15px 0;
         }
-        
+
     }
 
     @keyframes scale2 {
@@ -90,5 +91,5 @@ footer {
     img:hover {
         animation: scale2 0.5s forwards;
     }
-    
+
 }
